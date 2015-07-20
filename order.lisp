@@ -14,3 +14,9 @@
                          (cutains))
                         (roof (shingles)
                          (chimney))))
+
+(defparameter *h-drink-order* (make-hash-table))
+(setf (gethash 'bill *h-drink-order*) 'double-espresso)
+(setf (gethash 'lisa *h-drink-order*) 'small-drip-coffee)
+(setf (gethash 'jogn *h-drink-order*) 'medium-latte)
+(gethash 'lisa *h-drink-order*)
